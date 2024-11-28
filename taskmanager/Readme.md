@@ -12,10 +12,7 @@ Run `gradlew run` to start the JavaFX application.
 
 ## Copy files from ViMoTest
 
-* Navigate to the parent mps-vimotest project directory
-* Generate the ViMoTest Sandbox module which contains the task view example
-  * either by `gradlew mpsBuild`
-  * or by opening the project in MPS and building the sandbox module
-* In this taskview-fx project, run `gradlew copyGeneratedSources` and `gradlew copyGeneratedTests`
+* Follow the instructions in the root README.md to generate sources into `solutions/taskmanager/source_gen`
+* In this `taskmanager` project, run `gradlew check` which internally copies the generated files, compiles and runs the tests
 
 Note: we checked-in the generated files, such that the project can be demonstrated and the solution can be analyzed without the need to generate the files.
