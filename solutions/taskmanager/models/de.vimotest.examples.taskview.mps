@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:937d5732-7a1a-4049-83d7-d8e5622450b9(taskmanager.taskview)">
+<model ref="r:937d5732-7a1a-4049-83d7-d8e5622450b9(de.vimotest.examples.taskview)">
   <persistence version="9" />
   <languages>
     <devkit ref="d1a914ef-09af-4c66-a6d1-618e1f9114ea(de.vimotest.devkit)" />
