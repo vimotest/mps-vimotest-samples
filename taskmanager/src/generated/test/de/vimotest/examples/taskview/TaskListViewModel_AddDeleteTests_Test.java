@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import java.util.List;
 import org.junit.Assert;
 
-public class TaskListAddDeleteTests_Test {
+public class TaskListViewModel_AddDeleteTests_Test {
   private TaskListViewModel sut;
   private TaskListViewModelContextProvider contextProvider;
   private String oneTask = "[ { id:\"0\", name:\"A\", priority:\"low\", dueDate:\"2024/12/01\" } ]";
