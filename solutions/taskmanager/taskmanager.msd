@@ -20,8 +20,6 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-    <module reference="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" version="0" />
     <module reference="b28932ae-6b0e-4f97-ad77-84f278001d91(de.vimotest.genplan)" version="0" />
     <module reference="7ff2565a-9010-45f7-90dd-787927640c82(taskmanager)" version="0" />
   </dependencyVersions>

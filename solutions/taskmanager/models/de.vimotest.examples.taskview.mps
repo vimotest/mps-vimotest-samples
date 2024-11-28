@@ -239,23 +239,23 @@
   </node>
   <node concept="30n1Qd" id="7NXUkdSUtqp">
     <property role="TrG5h" value="TaskListViewModel_AddDeleteTests" />
-    <ref role="30n1PB" node="7Ymnhjip$__" />
+    <ref role="30n1PB" node="7Ymnhjip$__" resolve="TaskListViewModel" />
     <node concept="3LKzX3" id="7lPnU2OOXHa" role="30n1Qb">
       <property role="TrG5h" value="Add New Task" />
       <node concept="1s$VFG" id="7lPnU2OOXHb" role="1s$QAY">
         <node concept="DUd5q" id="7lPnU2OOXHc" role="1s$QAM">
           <node concept="27s6xY" id="7lPnU2OOXHd" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
           </node>
         </node>
         <node concept="DUd5q" id="7lPnU2OOXI1" role="1s$QAM">
           <node concept="3eaLt3" id="7lPnU2OOXI3" role="DUiS9">
-            <ref role="3ucQsQ" node="4w1hye2EyiC" />
+            <ref role="3ucQsQ" node="4w1hye2EyiC" resolve="AddNewTask" />
           </node>
         </node>
         <node concept="DUd2R" id="7lPnU2OOXHe" role="1s$QAX">
           <node concept="30nzp_" id="7lPnU2OOXHf" role="DUiSb">
-            <ref role="30nzpS" node="7Ymnhjip$_D" />
+            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
             <node concept="3UVeCy" id="7lPnU2OOXHg" role="30nDbQ">
               <node concept="2ayrQO" id="7lPnU2OOXHh" role="3UVeCz">
                 <node concept="1EpGR1" id="7lPnU2OOXHi" role="1EpG3j">
@@ -271,7 +271,7 @@
                   <property role="3_VSTZ" value="0" />
                   <node concept="1NuoHz" id="7lPnU2OOXHm" role="2aBVWM">
                     <property role="1EpJ0C" value="true" />
-                    <ref role="3elmOO" node="4w1hye2EyhB" />
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
                     <node concept="2mJbJ5" id="7lPnU2OOXHn" role="1NuoHy">
                       <node concept="2mJbG1" id="7lPnU2OOXHo" role="2mJbJ6">
                         <node concept="3eDL7N" id="7lPnU2OOXHp" role="3n32fm">
@@ -281,7 +281,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="7lPnU2OOXHq" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" />
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
                     <node concept="V3Zc6" id="7lPnU2OOXHr" role="1NuoHy">
                       <node concept="V3Zdv" id="7lPnU2OOXHs" role="V3Zc7">
                         <node concept="o7Kjd" id="7lPnU2OOXHt" role="oSbKM">
@@ -292,7 +292,7 @@
                   </node>
                   <node concept="1NuoHz" id="7lPnU2OOXHu" role="2aBVWM">
                     <property role="1EpJ0C" value="true" />
-                    <ref role="3elmOO" node="4w1hye2Eyio" />
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
                     <node concept="V3Zc6" id="7lPnU2OOXHv" role="1NuoHy">
                       <node concept="V3Zdv" id="7lPnU2OOXHw" role="V3Zc7">
                         <node concept="o7Kjd" id="7lPnU2OOXHx" role="oSbKM">
@@ -305,7 +305,7 @@
                 <node concept="3UOqEq" id="7lPnU2OOXHy" role="2ay43_">
                   <property role="3_VSTZ" value="1" />
                   <node concept="1NuoHz" id="7lPnU2OOXHz" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" />
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
                     <node concept="2mJbJ5" id="7lPnU2OOXH$" role="1NuoHy">
                       <node concept="2mJbG1" id="7lPnU2OOXH_" role="2mJbJ6">
                         <node concept="3eDL7N" id="7lPnU2OOXHA" role="3n32fm">
@@ -315,7 +315,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="7lPnU2OOXHB" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" />
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
                     <node concept="V3Zc6" id="7lPnU2OOXHC" role="1NuoHy">
                       <node concept="V3Zdv" id="7lPnU2OOXHD" role="V3Zc7">
                         <node concept="o7Kjd" id="7lPnU2OOXHE" role="oSbKM">
@@ -325,7 +325,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="7lPnU2OOXHF" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" />
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
                     <node concept="V3Zc6" id="7lPnU2OOXHG" role="1NuoHy">
                       <node concept="V3Zdv" id="7lPnU2OOXHH" role="V3Zc7">
                         <node concept="o7Kjd" id="7lPnU2OOXHI" role="oSbKM" />
@@ -381,23 +381,23 @@
       <node concept="1s$VFG" id="19EEtwRDL97" role="1s$QAY">
         <node concept="DUd5q" id="19EEtwRDL98" role="1s$QAM">
           <node concept="27s6xY" id="19EEtwRDL99" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwRDL9a" role="1s$QAM">
           <node concept="3eaLts" id="19EEtwRDLap" role="DUiS9">
             <property role="3_VSTZ" value="0" />
-            <ref role="3ucQsQ" node="7Ymnhjip$_D" />
+            <ref role="3ucQsQ" node="7Ymnhjip$_D" resolve="Tasks" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwRDLaq" role="1s$QAM">
           <node concept="3eaLt3" id="19EEtwRDLas" role="DUiS9">
-            <ref role="3ucQsQ" node="4w1hye2EyiN" />
+            <ref role="3ucQsQ" node="4w1hye2EyiN" resolve="DeleteTask" />
           </node>
         </node>
         <node concept="DUd2R" id="19EEtwRDL9c" role="1s$QAX">
           <node concept="30nzp_" id="19EEtwRDL9d" role="DUiSb">
-            <ref role="30nzpS" node="7Ymnhjip$_D" />
+            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
             <node concept="3UVeCy" id="19EEtwRDL9e" role="30nDbQ">
               <node concept="2ayrQO" id="19EEtwRDL9f" role="3UVeCz">
                 <node concept="1EpGR1" id="19EEtwRDL9g" role="1EpG3j">
@@ -414,7 +414,7 @@
                 <node concept="3UOqEq" id="19EEtwRDLat" role="2ay43_">
                   <property role="3_VSTZ" value="1" />
                   <node concept="1NuoHz" id="19EEtwRDLax" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" />
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
                     <node concept="2mJbJ5" id="19EEtwRDLau" role="1NuoHy">
                       <node concept="2mJbG1" id="19EEtwRDLav" role="2mJbJ6">
                         <node concept="3eDL7N" id="19EEtwRDLaw" role="3n32fm" />
@@ -422,7 +422,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLaA" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" />
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
                     <node concept="V3Zc6" id="19EEtwRDLaz" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLa$" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLa_" role="oSbKM">
@@ -432,7 +432,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLaF" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" />
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
                     <node concept="V3Zc6" id="19EEtwRDLaC" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLaD" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLaE" role="oSbKM" />
@@ -443,7 +443,7 @@
                 <node concept="3UOqEq" id="19EEtwRDLb5" role="2ay43_">
                   <property role="3_VSTZ" value="2" />
                   <node concept="1NuoHz" id="19EEtwRDLb6" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" />
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
                     <node concept="2mJbJ5" id="19EEtwRDLb7" role="1NuoHy">
                       <node concept="2mJbG1" id="19EEtwRDLb8" role="2mJbJ6">
                         <node concept="3eDL7N" id="19EEtwRDLb9" role="3n32fm" />
@@ -451,7 +451,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLba" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" />
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
                     <node concept="V3Zc6" id="19EEtwRDLbb" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLbc" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLbd" role="oSbKM">
@@ -461,7 +461,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLbg" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" />
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
                     <node concept="V3Zc6" id="19EEtwRDLbh" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLbi" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLbj" role="oSbKM" />
@@ -480,23 +480,23 @@
       <node concept="1s$VFG" id="19EEtwRDLbL" role="1s$QAY">
         <node concept="DUd5q" id="19EEtwRDLbQ" role="1s$QAM">
           <node concept="27s6xY" id="19EEtwRDLbR" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwRDLbS" role="1s$QAM">
           <node concept="3eaLts" id="19EEtwRDLbT" role="DUiS9">
             <property role="3_VSTZ" value="1" />
-            <ref role="3ucQsQ" node="7Ymnhjip$_D" />
+            <ref role="3ucQsQ" node="7Ymnhjip$_D" resolve="Tasks" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwRDLbU" role="1s$QAM">
           <node concept="3eaLt3" id="19EEtwRDLbV" role="DUiS9">
-            <ref role="3ucQsQ" node="4w1hye2EyiN" />
+            <ref role="3ucQsQ" node="4w1hye2EyiN" resolve="DeleteTask" />
           </node>
         </node>
         <node concept="DUd2R" id="19EEtwRDLbO" role="1s$QAX">
           <node concept="30nzp_" id="19EEtwRDLbW" role="DUiSb">
-            <ref role="30nzpS" node="7Ymnhjip$_D" />
+            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
             <node concept="3UVeCy" id="19EEtwRDLbX" role="30nDbQ">
               <node concept="2ayrQO" id="19EEtwRDLbY" role="3UVeCz">
                 <node concept="1EpGR1" id="19EEtwRDLbZ" role="1EpG3j">
@@ -513,7 +513,7 @@
                 <node concept="3UOqEq" id="19EEtwRDLc2" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
                   <node concept="1NuoHz" id="19EEtwRDLc3" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" />
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
                     <node concept="2mJbJ5" id="19EEtwRDLc4" role="1NuoHy">
                       <node concept="2mJbG1" id="19EEtwRDLc5" role="2mJbJ6">
                         <node concept="3eDL7N" id="19EEtwRDLc6" role="3n32fm" />
@@ -521,7 +521,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLc7" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" />
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
                     <node concept="V3Zc6" id="19EEtwRDLc8" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLc9" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLca" role="oSbKM">
@@ -531,7 +531,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLcd" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" />
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
                     <node concept="V3Zc6" id="19EEtwRDLce" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLcf" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLcg" role="oSbKM" />
@@ -542,7 +542,7 @@
                 <node concept="3UOqEq" id="19EEtwRDLch" role="2ay43_">
                   <property role="3_VSTZ" value="2" />
                   <node concept="1NuoHz" id="19EEtwRDLci" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" />
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
                     <node concept="2mJbJ5" id="19EEtwRDLcj" role="1NuoHy">
                       <node concept="2mJbG1" id="19EEtwRDLck" role="2mJbJ6">
                         <node concept="3eDL7N" id="19EEtwRDLcl" role="3n32fm" />
@@ -550,7 +550,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLcm" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" />
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
                     <node concept="V3Zc6" id="19EEtwRDLcn" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLco" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLcp" role="oSbKM">
@@ -560,7 +560,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLcs" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" />
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
                     <node concept="V3Zc6" id="19EEtwRDLct" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLcu" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLcv" role="oSbKM" />
@@ -579,23 +579,23 @@
       <node concept="1s$VFG" id="19EEtwRDLcx" role="1s$QAY">
         <node concept="DUd5q" id="19EEtwRDLcy" role="1s$QAM">
           <node concept="27s6xY" id="19EEtwRDLcz" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwRDLc$" role="1s$QAM">
           <node concept="3eaLts" id="19EEtwRDLc_" role="DUiS9">
             <property role="3_VSTZ" value="2" />
-            <ref role="3ucQsQ" node="7Ymnhjip$_D" />
+            <ref role="3ucQsQ" node="7Ymnhjip$_D" resolve="Tasks" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwRDLcA" role="1s$QAM">
           <node concept="3eaLt3" id="19EEtwRDLcB" role="DUiS9">
-            <ref role="3ucQsQ" node="4w1hye2EyiN" />
+            <ref role="3ucQsQ" node="4w1hye2EyiN" resolve="DeleteTask" />
           </node>
         </node>
         <node concept="DUd2R" id="19EEtwRDLcC" role="1s$QAX">
           <node concept="30nzp_" id="19EEtwRDLcD" role="DUiSb">
-            <ref role="30nzpS" node="7Ymnhjip$_D" />
+            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
             <node concept="3UVeCy" id="19EEtwRDLcE" role="30nDbQ">
               <node concept="2ayrQO" id="19EEtwRDLcF" role="3UVeCz">
                 <node concept="1EpGR1" id="19EEtwRDLcG" role="1EpG3j">
@@ -612,7 +612,7 @@
                 <node concept="3UOqEq" id="19EEtwRDLcJ" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
                   <node concept="1NuoHz" id="19EEtwRDLcK" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" />
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
                     <node concept="2mJbJ5" id="19EEtwRDLcL" role="1NuoHy">
                       <node concept="2mJbG1" id="19EEtwRDLcM" role="2mJbJ6">
                         <node concept="3eDL7N" id="19EEtwRDLcN" role="3n32fm" />
@@ -620,7 +620,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLcO" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" />
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
                     <node concept="V3Zc6" id="19EEtwRDLcP" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLcQ" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLcR" role="oSbKM">
@@ -630,7 +630,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLcU" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" />
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
                     <node concept="V3Zc6" id="19EEtwRDLcV" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLcW" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLcX" role="oSbKM" />
@@ -641,7 +641,7 @@
                 <node concept="3UOqEq" id="19EEtwRDLcY" role="2ay43_">
                   <property role="3_VSTZ" value="1" />
                   <node concept="1NuoHz" id="19EEtwRDLcZ" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" />
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
                     <node concept="2mJbJ5" id="19EEtwRDLd0" role="1NuoHy">
                       <node concept="2mJbG1" id="19EEtwRDLd1" role="2mJbJ6">
                         <node concept="3eDL7N" id="19EEtwRDLd2" role="3n32fm" />
@@ -649,7 +649,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLd3" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" />
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
                     <node concept="V3Zc6" id="19EEtwRDLd4" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLd5" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLd6" role="oSbKM">
@@ -659,7 +659,7 @@
                     </node>
                   </node>
                   <node concept="1NuoHz" id="19EEtwRDLd9" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" />
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
                     <node concept="V3Zc6" id="19EEtwRDLda" role="1NuoHy">
                       <node concept="V3Zdv" id="19EEtwRDLdb" role="V3Zc7">
                         <node concept="o7Kjd" id="19EEtwRDLdc" role="oSbKM" />
@@ -678,27 +678,27 @@
       <node concept="1s$VFG" id="19EEtwREcco" role="1s$QAY">
         <node concept="DUd5q" id="19EEtwREccp" role="1s$QAM">
           <node concept="27s6xY" id="19EEtwREccq" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwREcct" role="1s$QAM">
           <node concept="3eaLt3" id="19EEtwREccu" role="DUiS9">
-            <ref role="3ucQsQ" node="4w1hye2EyiN" />
+            <ref role="3ucQsQ" node="4w1hye2EyiN" resolve="DeleteTask" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwREcd6" role="1s$QAM">
           <node concept="3eaLt3" id="19EEtwREcd7" role="DUiS9">
-            <ref role="3ucQsQ" node="4w1hye2EyiN" />
+            <ref role="3ucQsQ" node="4w1hye2EyiN" resolve="DeleteTask" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwREcd8" role="1s$QAM">
           <node concept="3eaLt3" id="19EEtwREcd9" role="DUiS9">
-            <ref role="3ucQsQ" node="4w1hye2EyiN" />
+            <ref role="3ucQsQ" node="4w1hye2EyiN" resolve="DeleteTask" />
           </node>
         </node>
         <node concept="DUd2R" id="19EEtwREccv" role="1s$QAX">
           <node concept="30nzp_" id="19EEtwREccw" role="DUiSb">
-            <ref role="30nzpS" node="7Ymnhjip$_D" />
+            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
             <node concept="3UVeCy" id="19EEtwREccx" role="30nDbQ">
               <node concept="2ayrQO" id="19EEtwREccy" role="3UVeCz">
                 <node concept="1EpGR1" id="19EEtwREccz" role="1EpG3j">
@@ -789,23 +789,23 @@
       <node concept="1s$VFG" id="2gGjxPLE5Dq" role="1s$QAY">
         <node concept="DUd5q" id="2gGjxPLE5Dr" role="1s$QAM">
           <node concept="27s6xY" id="2gGjxPLE5Ds" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
           </node>
         </node>
         <node concept="DUd5q" id="2gGjxPLE5DN" role="1s$QAM">
           <node concept="3eaLts" id="2gGjxPLE5DP" role="DUiS9">
             <property role="3_VSTZ" value="0" />
-            <ref role="3ucQsQ" node="7Ymnhjip$_D" />
+            <ref role="3ucQsQ" node="7Ymnhjip$_D" resolve="Tasks" />
           </node>
         </node>
         <node concept="DUd5q" id="2gGjxPLE5DQ" role="1s$QAM">
           <node concept="3eaLt3" id="2gGjxPLE5DS" role="DUiS9">
-            <ref role="3ucQsQ" node="4w1hye2EyiN" />
+            <ref role="3ucQsQ" node="4w1hye2EyiN" resolve="DeleteTask" />
           </node>
         </node>
         <node concept="DUd2R" id="2gGjxPLE5Dt" role="1s$QAX">
           <node concept="30nzp_" id="2gGjxPLE5DU" role="DUiSb">
-            <ref role="30nzpS" node="4w1hye2EyiC" />
+            <ref role="30nzpS" node="4w1hye2EyiC" resolve="AddNewTask" />
             <node concept="2X2XOa" id="2gGjxPLE5DV" role="30nDbQ">
               <node concept="35STUl" id="2gGjxPLE5DW" role="2X2XOb">
                 <property role="3XJMQh" value="true" />
@@ -815,7 +815,7 @@
         </node>
         <node concept="DUd2R" id="2gGjxPLE5DX" role="1s$QAX">
           <node concept="30nzp_" id="2gGjxPLE5DY" role="DUiSb">
-            <ref role="30nzpS" node="4w1hye2EyiN" />
+            <ref role="30nzpS" node="4w1hye2EyiN" resolve="DeleteTask" />
             <node concept="2X2XOa" id="2gGjxPLE5E1" role="30nDbQ">
               <node concept="35STUl" id="2gGjxPLE5E2" role="2X2XOb" />
             </node>
