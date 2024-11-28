@@ -1,0 +1,79 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.14'
+}
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/generated/java'
+        }
+    }
+    test {
+        java {
+            srcDirs 'src/generated/test'
+        }
+    }
+}
+
+task copyGeneratedSources {
+    group 'copy-vimotest-generated-sources'
+
+    def generatedDir = "$rootDir/solutions/taskmanager/source_gen"
+    println "Copying generated sources from $generatedDir to src/generated/java"
+    delete 'src/generated'
+
+    copy {
+        from generatedDir
+        into 'src/generated/java'
+        include '**/*.java'
+        exclude '**/*Test.java', '**/TaskListViewModelContextProvider.java'
+    }
+    copy {
+        from generatedDir
+        into 'src/generated/test'
+        include '**/*Test.java'
+    }
+}
+
+// Optionally, clean the generated directory to avoid stale files
+clean.doLast {
+    delete 'src/generated'
+}
+
+javafx {
+    version = '17.0.9'
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.web', 'javafx.media']
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.8'
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+}
+
+test {
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
+        exceptionFormat "full"
+    }
+}
+
+application {
+    mainClass = 'de.vimotest.examples.taskview.MainApp'
+}
