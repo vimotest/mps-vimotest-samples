@@ -2,6 +2,17 @@
 
 This repository contains sample projects for the ViMoTest language.
 
+## Task Manager
+
+![TaskListViewModel](screenshots/screenshot_vimotest_taskview_viewmodel.png)
+
+![TaskListViewModel Test](screenshots/screenshot_vimotest_taskview_test.png)
+
+The JavaFX implementation project for the simple task manager application can be found in the subdirectory `taskmanager`.
+There is a gradle task `copyGeneratedSources` in the sub-project to copy the generated sources from `solutions/taskmanager/source_gen` to the local `src/taskmanager/generated` folder, where it is integrated to the taskmanager build process.
+
+See: [Task Manager Example](taskmanager/Readme.md)
+
 ## Getting Started
 
 ## Setup Option 1: Via Gradle
@@ -45,10 +56,3 @@ This repository contains sample projects for the ViMoTest language.
   * to generate: in menu `Build`/`Make Project`, or right click on the module `taskmanager` and select `Make Solution`
   * generated sources are in the `solutions/taskmanager/source_gen` folder
 * (optionally): switch to light theme in MPS under `Settings`/`Appearance & Behavior`/`Appearance`/`Theme`/`IntelliJ Light`
-
-## Task Manager JavaFX Project
-
-The JavaFX implementation project for the simple task manager application can be found in the subdirectory `taskmanager`.
-There is a gradle task `copyGeneratedSources` in the sub-project to copy the generated sources from `solutions/taskmanager/source_gen` to the local `src/taskmanager/generated` folder, where it is integrated to the taskmanager build process.
-
-See: [Task Manager Example](taskmanager/Readme.md)
