@@ -13,6 +13,7 @@ Run `gradlew run` to start the JavaFX application.
 ## Copy files from ViMoTest
 
 * Follow the instructions in the root README.md to generate sources into `solutions/taskmanager/source_gen`
-* In this `taskmanager` project, run `gradlew check` which internally copies the generated files, compiles and runs the tests
+* In this `taskmanager` project, run `gradlew copyGeneratedSources` to the generated files into `src/generated` for integration into the build process.
+* Run `gradlew check` to compile and run the tests
 
 Note: we checked-in the generated files, such that the project can be demonstrated and the solution can be analyzed without the need to generate the files.
