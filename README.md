@@ -1,6 +1,6 @@
 # ViMoTest Samples
 
-This repository contains sample projects for the ViMoTest language.
+This repository contains sample projects for the ViMoTest language (https://github.com/vimotest/mps-vimotest).
 
 ## Task Manager
 
