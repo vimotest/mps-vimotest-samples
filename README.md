@@ -15,15 +15,25 @@ This repository contains sample projects for the ViMoTest language.
 * then, when MPS has opened, the project is ready
   * if you observe a "No project was found to open the file in" error, simply try it again
 
-## Setup Option 2: Download ViMoTest MPS Bundle
+## Setup Option 2: Install MPS Manually
 
-* download the MPS bundle for your operating system from TODO
-  * Windows: vimotest-mps-bundle-windows-x64
+* download MPS 2024.1.1 from https://www.jetbrains.com/mps/download/
+* download `vimotest-plugins-all.zip` from the latest release: https://github.com/vimotest/mps-vimotest/releases/latest
+* extract the downloaded ZIP, such that there are three ZIPs in the folder
+  * `mps-vimotest.zip`, `alfi.zip`, `CppBaseLanguage.zip`
+* start MPS and install the plugins via `Settings`/`Plugins`/`Install Plugin from Disk...`
+  * select sequentially the three ZIPs in this order: `CppBaseLanguage.zip`, `alfi.zip`, `mps-vimotest.zip`
+  * restart MPS
+
+## Setup Option 3: Download ViMoTest MPS Bundle
+
+* download the MPS bundle for your operating system from the latest release: https://github.com/vimotest/mps-vimotest/releases/latest
+  * Windows: `vimotest-mps-bundle-windows-x64.zip`
   * MacOS
-    * Silicon: vimotest-mps-bundle-osx-aarch64
-    * Intel: vimotest-mps-bundle-osx-x64
+    * Silicon: `vimotest-mps-bundle-osx-aarch64.zip`
+    * Intel: `vimotest-mps-bundle-osx-x64.zip`
     * Important: MacOS will not allow to run the downloaded application, because it is not signed, you can allow it by executing the following command in the terminal: `xattr -dr com.apple.quarantine /path/to/extracted/Contents`
-  * Linux: vimotest-mps-bundle-linux-x64
+  * Linux: `vimotest-mps-bundle-linux-x64.zip`
 * extract the downloaded ZIP and start MPS
   * Windows/Linus: `bin/mps.bat`
   * MacOS: `Contents/MacOS/mps`
