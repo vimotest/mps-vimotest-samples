@@ -9,6 +9,11 @@ task prepareMps {
     dependsOn 'buildOsSpecificBundle'
 }
 
+task mpsBuild {
+    group 'mps'
+    dependsOn 'mpsAntGenerate', 'mpsAntBuild'
+}
+
 task openProjectInMps(type: Exec) {
     group 'mps'
     dependsOn 'buildOsSpecificBundle', 'mpsOpenProjectInMpsForCurrentOs'

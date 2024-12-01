@@ -18,6 +18,18 @@ jobs:
 
       - uses: actions/checkout@v4
 
+      # Prepare MPS
+      - name: Download and Prepare MPS
+        run: sh ./gradlew prepareMps
+
+      # Clean Project (source_gen of VCS)
+      - name: Clean Project
+        run: sh ./gradlew mpsClean
+
+      # Build Project
+      - name: Build Project
+        run: sh ./gradlew mpsBuild
+
       # Build taskview example
       - name: Compile TaskView Example
         run: sh ./gradlew assemble
