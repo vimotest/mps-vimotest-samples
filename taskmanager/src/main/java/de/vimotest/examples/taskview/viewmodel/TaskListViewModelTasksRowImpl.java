@@ -11,14 +11,12 @@ public class TaskListViewModelTasksRowImpl extends TaskListViewModelTasksRow {
     private StringProperty name;
     private StringProperty dueDate;
     private StringProperty priority;
-    private StringProperty status;
 
     public TaskListViewModelTasksRowImpl(Task task) {
         this.id = new SimpleStringProperty(task.getId() + "");
         this.name = new SimpleStringProperty(task.getName());
         this.dueDate = new SimpleStringProperty(task.getDueDate());
         this.priority = new SimpleStringProperty(toPriorityImageName(task.getPriority()));
-        this.status = new SimpleStringProperty(task.getStatus());
     }
 
     private static String toPriorityImageName(String priority) {
@@ -48,10 +46,6 @@ public class TaskListViewModelTasksRowImpl extends TaskListViewModelTasksRow {
 
     public StringProperty priorityProperty() {
         return priority;
-    }
-
-    public StringProperty statusProperty() {
-        return status;
     }
 
     public String getId() {
