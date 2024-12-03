@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="taskmanager" uuid="7ff2565a-9010-45f7-90dd-787927640c82" moduleVersion="0">
+<solution name="de.vimotest.examples.taskmanager" uuid="7ff2565a-9010-45f7-90dd-787927640c82" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/models" />
@@ -20,8 +20,8 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="7ff2565a-9010-45f7-90dd-787927640c82(de.vimotest.examples.taskmanager)" version="0" />
     <module reference="b28932ae-6b0e-4f97-ad77-84f278001d91(de.vimotest.genplan)" version="0" />
-    <module reference="7ff2565a-9010-45f7-90dd-787927640c82(taskmanager)" version="0" />
   </dependencyVersions>
 </solution>
 
