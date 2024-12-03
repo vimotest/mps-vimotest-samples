@@ -77,3 +77,6 @@ test {
 application {
     mainClass = 'de.vimotest.examples.taskview.MainApp'
 }
+
+// https://stackoverflow.com/a/64418715
+tasks.register("prepareKotlinBuildScriptModel"){}
