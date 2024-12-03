@@ -23,7 +23,7 @@ public class TaskListViewModel_ComplexTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new TaskListViewModelContextProvider();
+    this.contextProvider = new TaskListViewModelContextProviderImpl();
     this.contextProvider.Init();
   }
 
