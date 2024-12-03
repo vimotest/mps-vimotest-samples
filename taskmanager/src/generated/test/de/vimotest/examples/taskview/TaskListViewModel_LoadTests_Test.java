@@ -25,40 +25,40 @@ public class TaskListViewModel_LoadTests_Test {
   public void test_Load_one_Task_with_all_values_given_oneTask_when_LoadView_then_Tasks_has_1_rows() throws Exception {
     this.given_oneTask();
     this.BuildSut();
-    this.when_LoadView1();
+    this.when_LoadView_1();
     this.then_Tasks_has_1_rows();
   }
   @Test
   public void test_Initial_selection_given_twoTasks_when_LoadView_then_Tasks_has_2_rows_and_selected_row_handle_0() throws Exception {
     this.given_twoTasks();
     this.BuildSut();
-    this.when_LoadView2();
+    this.when_LoadView_2();
     this.then_Tasks_has_2_rows_and_selected_row_handle_0();
   }
   @Test
   public void test_Load_Tasks_with_all_three_priority_levels_given_priorityCombinations_when_LoadView_then_Tasks_has_3_rows() throws Exception {
     this.given_priorityCombinations();
     this.BuildSut();
-    this.when_LoadView3();
+    this.when_LoadView_3();
     this.then_Tasks_has_3_rows();
   }
   @Test
   public void test_Due_Date_from_2023_given_dueDate2023_when_LoadView_then_Tasks_has_1_rows() throws Exception {
     this.given_dueDate2023();
     this.BuildSut();
-    this.when_LoadView4();
-    this.then_Tasks_has_1_rows1();
+    this.when_LoadView_4();
+    this.then_Tasks_has_1_rows_1();
   }
   @Test
   public void test_Due_Date_Tooltip_given_dueDate2024_when_LoadView_then_Tasks_has_1_rows() throws Exception {
     this.given_dueDate2024();
     this.BuildSut();
-    this.when_LoadView5();
-    this.then_Tasks_has_1_rows2();
+    this.when_LoadView_5();
+    this.then_Tasks_has_1_rows_2();
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new TaskListViewModelContextProvider();
+    this.contextProvider = new TaskListViewModelContextProviderImpl();
     this.contextProvider.Init();
   }
 
@@ -90,19 +90,19 @@ public class TaskListViewModel_LoadTests_Test {
   public void when_LoadView() {
     this.sut.loadView();
   }
-  public void when_LoadView1() {
+  public void when_LoadView_1() {
     this.sut.loadView();
   }
-  public void when_LoadView2() {
+  public void when_LoadView_2() {
     this.sut.loadView();
   }
-  public void when_LoadView3() {
+  public void when_LoadView_3() {
     this.sut.loadView();
   }
-  public void when_LoadView4() {
+  public void when_LoadView_4() {
     this.sut.loadView();
   }
-  public void when_LoadView5() {
+  public void when_LoadView_5() {
     this.sut.loadView();
   }
 
@@ -156,7 +156,7 @@ public class TaskListViewModel_LoadTests_Test {
     Assert.assertEquals("PrioHigh", row2.getPriorityImageSource());
     // }
   }
-  public void then_Tasks_has_1_rows1() {
+  public void then_Tasks_has_1_rows_1() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
     Assert.assertEquals(1, actualRows.size());
     // {
@@ -168,7 +168,7 @@ public class TaskListViewModel_LoadTests_Test {
     Assert.assertEquals("red", row0.getDue_DateTextColor());
     // }
   }
-  public void then_Tasks_has_1_rows2() {
+  public void then_Tasks_has_1_rows_2() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
     Assert.assertEquals(1, actualRows.size());
     // {
