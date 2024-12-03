@@ -2,8 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.examples.taskmanager/de.vimotest.examples.taskmanager.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.samples.build/de.vimotest.samples.build.msd" folder="util" />
-      <modulePath path="$PROJECT_DIR$/solutions/taskmanager/taskmanager.msd" folder="" />
     </projectModules>
   </component>
 </project>

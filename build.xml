@@ -42,10 +42,10 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/taskmanager.jar" />
-    <mkdir dir="${build.tmp}/default/taskmanager.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/taskmanager.jar/META-INF/module.xml">
-      <module namespace="taskmanager" type="solution" uuid="7ff2565a-9010-45f7-90dd-787927640c82">
+    <mkdir dir="${build.tmp}/default/de.vimotest.examples.taskmanager.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.examples.taskmanager.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.examples.taskmanager.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.examples.taskmanager" type="solution" uuid="7ff2565a-9010-45f7-90dd-787927640c82">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="rt" />
@@ -69,26 +69,26 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="taskmanager-src.jar" descriptor="taskmanager.msd" />
+        <sources jar="de.vimotest.examples.taskmanager-src.jar" descriptor="de.vimotest.examples.taskmanager.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/taskmanager.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/taskmanager" />
-      <fileset dir="${basedir}/solutions/taskmanager/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/taskmanager.jar" />
+    <jar destfile="${build.layout}/de.vimotest.examples.taskmanager.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.examples.taskmanager" />
+      <fileset dir="${basedir}/solutions/de.vimotest.examples.taskmanager/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.examples.taskmanager.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-taskmanager-models">
-      <fileset dir="${basedir}/solutions/taskmanager/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.examples.taskmanager-models">
+      <fileset dir="${basedir}/solutions/de.vimotest.examples.taskmanager/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/taskmanager-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/taskmanager/source_gen">
+    <jar destfile="${build.layout}/de.vimotest.examples.taskmanager-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/de.vimotest.examples.taskmanager/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/solutions/taskmanager/taskmanager.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-taskmanager-models" prefix="module/models" />
+      <zipfileset file="${basedir}/solutions/de.vimotest.examples.taskmanager/de.vimotest.examples.taskmanager.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.examples.taskmanager-models" prefix="module/models" />
     </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mps.runtimeBuild=${mps.runtimeBuild}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
@@ -104,7 +104,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.taskmanager" />
+  <target name="compileJava" depends="java.compile.de.vimotest.examples.taskmanager" />
   
   <target name="processResources" />
   
@@ -128,7 +128,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
       <chunk>
-        <module file="${basedir}/solutions/taskmanager/taskmanager.msd" />
+        <module file="${basedir}/solutions/de.vimotest.examples.taskmanager/de.vimotest.examples.taskmanager.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -145,13 +145,13 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.taskmanager" depends="fetchDependencies">
-    <mkdir dir="${basedir}/solutions/taskmanager/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/taskmanager" />
-    <javac destdir="${build.tmp}/java/out/taskmanager" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.de.vimotest.examples.taskmanager" depends="fetchDependencies">
+    <mkdir dir="${basedir}/solutions/de.vimotest.examples.taskmanager/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.vimotest.examples.taskmanager" />
+    <javac destdir="${build.tmp}/java/out/de.vimotest.examples.taskmanager" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/solutions/taskmanager/source_gen" />
+        <path location="${basedir}/solutions/de.vimotest.examples.taskmanager/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -189,12 +189,12 @@
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.9.3.jar" />
       </classpath>
     </javac>
-    <copy todir="${build.tmp}/java/out/taskmanager">
-      <fileset dir="${basedir}/solutions/taskmanager/source_gen" excludes="**/*.java" />
+    <copy todir="${build.tmp}/java/out/de.vimotest.examples.taskmanager">
+      <fileset dir="${basedir}/solutions/de.vimotest.examples.taskmanager/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/solutions/taskmanager/source_gen" />
+    <delete dir="${basedir}/solutions/de.vimotest.examples.taskmanager/source_gen" />
   </target>
 </project>

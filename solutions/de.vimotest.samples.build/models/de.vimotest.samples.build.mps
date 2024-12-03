@@ -151,15 +151,15 @@
       <property role="TrG5h" value="mps-vimotest-samples" />
       <node concept="1E1JtA" id="3J0evl76WrK" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="taskmanager" />
+        <property role="TrG5h" value="de.vimotest.examples.taskmanager" />
         <property role="3LESm3" value="7ff2565a-9010-45f7-90dd-787927640c82" />
         <node concept="55IIr" id="3J0evl76WrF" role="3LF7KH">
           <node concept="2Ry0Ak" id="3J0evl76WrG" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="3J0evl76WrH" role="2Ry0An">
-              <property role="2Ry0Am" value="taskmanager" />
-              <node concept="2Ry0Ak" id="3J0evl76WrI" role="2Ry0An">
-                <property role="2Ry0Am" value="taskmanager.msd" />
+              <property role="2Ry0Am" value="de.vimotest.examples.taskmanager" />
+              <node concept="2Ry0Ak" id="2BKDwExhoOs" role="2Ry0An">
+                <property role="2Ry0Am" value="de.vimotest.examples.taskmanager.msd" />
               </node>
             </node>
           </node>
@@ -168,19 +168,19 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="3J0evl76Wsa" role="1HemKq">
-            <node concept="55IIr" id="3J0evl76Ws5" role="3LXTmr">
-              <node concept="2Ry0Ak" id="3J0evl76Ws6" role="iGT6I">
+          <node concept="3LXTmp" id="2BKDwExhoOx" role="1HemKq">
+            <node concept="55IIr" id="2BKDwExhoOt" role="3LXTmr">
+              <node concept="2Ry0Ak" id="2BKDwExhoOu" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3J0evl76Ws7" role="2Ry0An">
-                  <property role="2Ry0Am" value="taskmanager" />
-                  <node concept="2Ry0Ak" id="3J0evl76Ws8" role="2Ry0An">
+                <node concept="2Ry0Ak" id="2BKDwExhoOv" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.vimotest.examples.taskmanager" />
+                  <node concept="2Ry0Ak" id="2BKDwExhoOw" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="3J0evl76Wsb" role="3LXTna">
+            <node concept="3qWCbU" id="2BKDwExhoOy" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>

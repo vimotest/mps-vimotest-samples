@@ -29,7 +29,7 @@ sourceSets {
 task copyGeneratedSources {
     group 'copy-vimotest-generated-sources'
 
-    def generatedDir = "$rootDir/solutions/taskmanager/source_gen"
+    def generatedDir = "$rootDir/solutions/de.vimotest.examples.taskmanager/source_gen"
     println "Copying generated sources from $generatedDir to src/generated/java"
     delete 'src/generated'
 
