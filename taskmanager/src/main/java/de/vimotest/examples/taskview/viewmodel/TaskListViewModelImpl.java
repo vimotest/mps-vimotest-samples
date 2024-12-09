@@ -64,22 +64,22 @@ public class TaskListViewModelImpl extends TaskListViewModel {
     }
 
     @Override
-    public List<TaskListViewModelTasksRow> getTasksWidgetTableRows() {
+    public List<TaskListViewModelTasksRow> getTasksTableRows() {
         return tasks.stream().map(task -> (TaskListViewModelTasksRow) task).toList();
     }
 
     @Override
-    public String getTasksSelectedRow() {
+    public String getTasksTableSelectedRow() {
         return selectedRow.get();
     }
 
     @Override
-    public Boolean getIsAddNewTaskEnabled() {
+    public Boolean getIsAddNewTaskButtonEnabled() {
         return addTaskButtonEnabled.get();
     }
 
     @Override
-    public Boolean getIsDeleteTaskEnabled() {
+    public Boolean getIsDeleteTaskButtonEnabled() {
         return deleteTaskButtonEnabled.get();
     }
 

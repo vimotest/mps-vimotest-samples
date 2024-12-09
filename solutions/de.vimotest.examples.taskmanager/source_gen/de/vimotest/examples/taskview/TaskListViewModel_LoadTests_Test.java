@@ -108,74 +108,74 @@ public class TaskListViewModel_LoadTests_Test {
 
 
   public void then_Tasks_has_0_rows() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(0, actualRows.size());
   }
   public void then_Tasks_has_1_rows() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(1, actualRows.size());
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("PrioLow", row0.getPriorityImageSource());
-    Assert.assertEquals("A", row0.getTask_NameText());
-    Assert.assertEquals("2024/12/01", row0.getDue_DateText());
+    Assert.assertEquals("PrioLow", row0.getPriorityImageName());
+    Assert.assertEquals("A", row0.getTaskNameLabelText());
+    Assert.assertEquals("2024/12/01", row0.getDueDateLabelText());
     // }
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_0() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("A", row0.getTask_NameText());
+    Assert.assertEquals("A", row0.getTaskNameLabelText());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("1", row1.getRowHandle());
-    Assert.assertEquals("B", row1.getTask_NameText());
+    Assert.assertEquals("B", row1.getTaskNameLabelText());
     // }
-    Assert.assertEquals("0", this.sut.getTasksSelectedRow());
+    Assert.assertEquals("0", this.sut.getTasksTableSelectedRow());
   }
   public void then_Tasks_has_3_rows() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(3, actualRows.size());
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("PrioLow", row0.getPriorityImageSource());
+    Assert.assertEquals("PrioLow", row0.getPriorityImageName());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("1", row1.getRowHandle());
-    Assert.assertEquals("PrioMedium", row1.getPriorityImageSource());
+    Assert.assertEquals("PrioMedium", row1.getPriorityImageName());
     // }
     // {
     TaskListViewModelTasksRow row2 = actualRows.get(3 - 1);
     Assert.assertEquals("2", row2.getRowHandle());
-    Assert.assertEquals("PrioHigh", row2.getPriorityImageSource());
+    Assert.assertEquals("PrioHigh", row2.getPriorityImageName());
     // }
   }
   public void then_Tasks_has_1_rows_1() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(1, actualRows.size());
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("Task A", row0.getTask_NameText());
-    Assert.assertEquals("red", row0.getTask_NameTextColor());
-    Assert.assertEquals("2023/01/01", row0.getDue_DateText());
-    Assert.assertEquals("red", row0.getDue_DateTextColor());
+    Assert.assertEquals("Task A", row0.getTaskNameLabelText());
+    Assert.assertEquals("red", row0.getTaskNameLabelTextColor());
+    Assert.assertEquals("2023/01/01", row0.getDueDateLabelText());
+    Assert.assertEquals("red", row0.getDueDateLabelTextColor());
     // }
   }
   public void then_Tasks_has_1_rows_2() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(1, actualRows.size());
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("2024/10/11", row0.getDue_DateText());
-    Assert.assertEquals("11th October 2024", row0.getDue_DateToolTip());
+    Assert.assertEquals("2024/10/11", row0.getDueDateLabelText());
+    Assert.assertEquals("11th October 2024", row0.getDueDateLabelToolTip());
     // }
   }
 }

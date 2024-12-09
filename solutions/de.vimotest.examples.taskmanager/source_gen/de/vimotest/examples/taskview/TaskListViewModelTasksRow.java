@@ -4,11 +4,11 @@ package de.vimotest.examples.taskview;
 
 
 public abstract class TaskListViewModelTasksRow {
-  public abstract String getPriorityImageSource();
-  public abstract String getTask_NameText();
-  public abstract String getTask_NameTextColor();
-  public abstract String getDue_DateText();
-  public abstract String getDue_DateToolTip();
-  public abstract String getDue_DateTextColor();
+  public abstract String getPriorityImageName();
+  public abstract String getTaskNameLabelText();
+  public abstract String getTaskNameLabelTextColor();
+  public abstract String getDueDateLabelText();
+  public abstract String getDueDateLabelToolTip();
+  public abstract String getDueDateLabelTextColor();
   public abstract String getRowHandle();
 }

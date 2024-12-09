@@ -58,32 +58,31 @@ public class TaskListViewModelTasksRowImpl extends TaskListViewModelTasksRow {
     }
 
     @Override
-    public String getPriorityImageSource() {
+    public String getPriorityImageName() {
         return priority.get();
     }
 
     @Override
-    public String getTask_NameText() {
+    public String getTaskNameLabelText() {
         return name.get();
+    }
+    @Override
+    public String getTaskNameLabelTextColor() {
+        return dueDate.get().startsWith("2023") ? "red" : "black";
     }
 
     @Override
-    public String getDue_DateText() {
+    public String getDueDateLabelText() {
         return dueDate.get();
     }
 
     @Override
-    public String getTask_NameTextColor() {
+    public String getDueDateLabelTextColor() {
         return dueDate.get().startsWith("2023") ? "red" : "black";
     }
 
     @Override
-    public String getDue_DateTextColor() {
-        return dueDate.get().startsWith("2023") ? "red" : "black";
-    }
-
-    @Override
-    public String getDue_DateToolTip() {
+    public String getDueDateLabelToolTip() {
         return DueDateFormatter.formatDueDate(dueDate.get());
     }
 }

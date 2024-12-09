@@ -150,75 +150,75 @@ public class TaskListViewModel_AddDeleteTests_Test {
 
 
   public void then_Tasks_has_2_rows_and_selected_row_handle_1() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("A", row0.getTask_NameText());
+    Assert.assertEquals("A", row0.getTaskNameLabelText());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("1", row1.getRowHandle());
-    Assert.assertEquals("PrioMedium", row1.getPriorityImageSource());
-    Assert.assertEquals("<New Task>", row1.getTask_NameText());
-    Assert.assertEquals("", row1.getDue_DateText());
+    Assert.assertEquals("PrioMedium", row1.getPriorityImageName());
+    Assert.assertEquals("<New Task>", row1.getTaskNameLabelText());
+    Assert.assertEquals("", row1.getDueDateLabelText());
     // }
-    Assert.assertEquals("1", this.sut.getTasksSelectedRow());
+    Assert.assertEquals("1", this.sut.getTasksTableSelectedRow());
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_1_1() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("1", row0.getRowHandle());
-    Assert.assertEquals("B", row0.getTask_NameText());
+    Assert.assertEquals("B", row0.getTaskNameLabelText());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("2", row1.getRowHandle());
-    Assert.assertEquals("C", row1.getTask_NameText());
+    Assert.assertEquals("C", row1.getTaskNameLabelText());
     // }
-    Assert.assertEquals("1", this.sut.getTasksSelectedRow());
+    Assert.assertEquals("1", this.sut.getTasksTableSelectedRow());
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_2() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("A", row0.getTask_NameText());
+    Assert.assertEquals("A", row0.getTaskNameLabelText());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("2", row1.getRowHandle());
-    Assert.assertEquals("C", row1.getTask_NameText());
+    Assert.assertEquals("C", row1.getTaskNameLabelText());
     // }
-    Assert.assertEquals("2", this.sut.getTasksSelectedRow());
+    Assert.assertEquals("2", this.sut.getTasksTableSelectedRow());
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_1_2() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("A", row0.getTask_NameText());
+    Assert.assertEquals("A", row0.getTaskNameLabelText());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("1", row1.getRowHandle());
-    Assert.assertEquals("B", row1.getTask_NameText());
+    Assert.assertEquals("B", row1.getTaskNameLabelText());
     // }
-    Assert.assertEquals("1", this.sut.getTasksSelectedRow());
+    Assert.assertEquals("1", this.sut.getTasksTableSelectedRow());
   }
   public void then_Tasks_has_0_rows() {
-    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksWidgetTableRows();
+    List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
     Assert.assertEquals(0, actualRows.size());
   }
   public void then_AddNewTask_is_enabled() {
-    Assert.assertTrue(this.sut.getIsAddNewTaskEnabled());
+    Assert.assertTrue(this.sut.getIsAddNewTaskButtonEnabled());
   }
   public void then_DeleteTask_is_not_enabled() {
-    Assert.assertFalse(this.sut.getIsDeleteTaskEnabled());
+    Assert.assertFalse(this.sut.getIsDeleteTaskButtonEnabled());
   }
 }
