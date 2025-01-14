@@ -12,7 +12,7 @@
     <facet type="generator" planModel="r:829834d4-c16b-4fd7-bcaa-de740a30ef0a(de.vimotest.genplan.vimotestToJava@genplan)" />
   </facets>
   <languageVersions>
-    <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="0" />
+    <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="1" />
     <language slang="l:611ecc9e-0703-4ab9-a13c-fb396c607716:de.vimotest.types" version="0" />
     <language slang="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" version="0" />
     <language slang="l:716e8717-88c0-4280-8c16-b4d88567596f:de.vimotest.viewmodel.testing" version="0" />
