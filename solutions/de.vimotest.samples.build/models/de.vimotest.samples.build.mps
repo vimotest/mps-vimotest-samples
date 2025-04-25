@@ -119,7 +119,7 @@
       <property role="TrG5h" value="project_home" />
     </node>
     <node concept="2sgV4H" id="3J0evl76WrC" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" />
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="3J0evl76WrD" role="2JcizS">
         <ref role="398BVh" node="3J0evl76WrB" resolve="mps_home" />
       </node>
@@ -144,7 +144,7 @@
     </node>
     <node concept="1l3spV" id="3J0evl76WrZ" role="1l3spN">
       <node concept="L2wRC" id="3J0evl76Wsc" role="39821P">
-        <ref role="L2wRA" node="3J0evl76WrK" resolve="taskmanager" />
+        <ref role="L2wRA" node="3J0evl76WrK" resolve="de.vimotest.examples.taskmanager" />
       </node>
     </node>
     <node concept="2G$12M" id="3J0evl76WrL" role="3989C9">
