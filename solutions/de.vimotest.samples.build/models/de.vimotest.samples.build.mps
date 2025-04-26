@@ -10,6 +10,7 @@
     <import index="n8x9" ref="r:f1ca4df9-58ad-42a1-855e-61c0fc8f7d75(de.vimotest.build)" />
     <import index="mk2q" ref="r:394bda66-ac7c-48d2-8b30-5ebcc56c2d2a(alfi.build)" />
     <import index="gwjr" ref="r:9d11b55c-368f-4d5a-8409-18718d1d42b0(CppBaseLanguage.build)" />
+    <import index="jn6j" ref="r:ded66146-2842-4fe9-8436-576d58b859d9(CsBaseLanguage.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -139,6 +140,12 @@
     <node concept="2sgV4H" id="3J0evl76WTq" role="1l3spa">
       <ref role="1l3spb" to="gwjr:4h_5oU0U7hs" resolve="CppBaseLanguage" />
       <node concept="398BVA" id="3J0evl76X6G" role="2JcizS">
+        <ref role="398BVh" node="3J0evl76Yrh" resolve="dependencies_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="7JuMxBFuoa9" role="1l3spa">
+      <ref role="1l3spb" to="jn6j:4xDflt7HBlw" resolve="CsBaseLanguage" />
+      <node concept="398BVA" id="7JuMxBFuoab" role="2JcizS">
         <ref role="398BVh" node="3J0evl76Yrh" resolve="dependencies_home" />
       </node>
     </node>

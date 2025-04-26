@@ -15,6 +15,7 @@
     <dependency reexport="false">694fa9f8-dbdd-46fd-a9d9-f8f8c27d011b(de.vimotest.build)</dependency>
     <dependency reexport="false">b1005ef7-77b9-4100-a8d1-d289b725faf9(alfi.build)</dependency>
     <dependency reexport="false">4b6b1874-7e10-42bc-88e2-7525942dcfc8(CppBaseLanguage.build)</dependency>
+    <dependency reexport="false">4c997861-1d80-410f-8bda-2feda30a3568(CsBaseLanguage.build)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" version="0" />
@@ -23,6 +24,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="4b6b1874-7e10-42bc-88e2-7525942dcfc8(CppBaseLanguage.build)" version="0" />
+    <module reference="4c997861-1d80-410f-8bda-2feda30a3568(CsBaseLanguage.build)" version="0" />
     <module reference="b1005ef7-77b9-4100-a8d1-d289b725faf9(alfi.build)" version="0" />
     <module reference="694fa9f8-dbdd-46fd-a9d9-f8f8c27d011b(de.vimotest.build)" version="0" />
     <module reference="7c63e913-bbf4-47c4-bb70-100d8bff7a50(de.vimotest.samples.build)" version="0" />
