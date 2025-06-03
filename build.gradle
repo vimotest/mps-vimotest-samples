@@ -1,6 +1,6 @@
-ext.mpsVersion = "2024.3.2"
+ext.mpsVersion = "2025.1"
 ext.mpsPlugins = [ ]
-ext.customMpsPlugins = [ "vimotest-plugins-all": "https://github.com/vimotest/mps-vimotest/releases/download/2024.3.0/vimotest-plugins-all.zip" ]
+ext.customMpsPlugins = [ "vimotest-plugins-all": "https://github.com/vimotest/mps-vimotest/releases/download/2025.1.0/vimotest-plugins-all.zip" ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
 
