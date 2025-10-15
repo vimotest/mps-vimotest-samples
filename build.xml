@@ -32,9 +32,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <fileset dir="${artifacts.mps}/lib">
-      <include name="util-8.jar" />
-    </fileset>
+    <pathelement location="${artifacts.mps}/lib/util-8.jar" />
   </path>
   
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
@@ -172,8 +170,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/util-8.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-modules/alfi.StandardModelLibrary.jar" />
         <fileset file="${artifacts.mps-vimotest}/mps-vimotest/languages/mps-build/de.vimotest.genplan.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />

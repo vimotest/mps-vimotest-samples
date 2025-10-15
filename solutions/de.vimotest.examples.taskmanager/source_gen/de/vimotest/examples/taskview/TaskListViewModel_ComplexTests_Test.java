@@ -50,7 +50,7 @@ public class TaskListViewModel_ComplexTests_Test {
 
   public void then_Tasks_has_3_rows_and_selected_row_handle_2() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals(3, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
