@@ -2,7 +2,7 @@
 <model ref="r:937d5732-7a1a-4049-83d7-d8e5622450b9(de.vimotest.examples.taskview)">
   <persistence version="9" />
   <languages>
-    <devkit ref="d1a914ef-09af-4c66-a6d1-618e1f9114ea(de.vimotest.devkit)" />
+    <devkit ref="d1a914ef-09af-4c66-a6d1-618e1f9114ea(de.vimotest.core.devkit)" />
   </languages>
   <imports />
   <registry>
@@ -156,6 +156,7 @@
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
+        <property id="4513875792335097421" name="baseName" index="$YGLj" />
         <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
@@ -264,13 +265,13 @@
             <node concept="3UVeCy" id="7lPnU2OOXHg" role="30nDbQ">
               <node concept="2ayrQO" id="7lPnU2OOXHh" role="3UVeCz">
                 <node concept="1EpGR1" id="7lPnU2OOXHi" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="7lPnU2OOXHj" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="7lPnU2OOXHk" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="7lPnU2OOXHl" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
@@ -410,14 +411,14 @@
               <node concept="2ayrQO" id="19EEtwRDL9f" role="3UVeCz">
                 <node concept="1EpGR1" id="19EEtwRDL9g" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="19EEtwRDL9h" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="19EEtwRDL9i" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="19EEtwRDLat" role="2ay43_">
                   <property role="3_VSTZ" value="1" />
@@ -512,14 +513,14 @@
               <node concept="2ayrQO" id="19EEtwRDLbY" role="3UVeCz">
                 <node concept="1EpGR1" id="19EEtwRDLbZ" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="19EEtwRDLc0" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="19EEtwRDLc1" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="19EEtwRDLc2" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
@@ -614,14 +615,14 @@
               <node concept="2ayrQO" id="19EEtwRDLcF" role="3UVeCz">
                 <node concept="1EpGR1" id="19EEtwRDLcG" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="19EEtwRDLcH" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="19EEtwRDLcI" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="19EEtwRDLcJ" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
@@ -720,14 +721,14 @@
               <node concept="2ayrQO" id="19EEtwREccy" role="3UVeCz">
                 <node concept="1EpGR1" id="19EEtwREccz" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="19EEtwREcc$" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="19EEtwREcc_" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
               </node>
               <node concept="E2vIp" id="50M3AvrXTIz" role="E88qO" />
@@ -845,7 +846,7 @@
     </node>
   </node>
   <node concept="103ZX$" id="7Ymnhjip$__">
-    <property role="TrG5h" value="TaskListViewModel" />
+    <property role="$YGLj" value="TaskListViewModel" />
     <node concept="103ZXx" id="7Ymnhjip$_A" role="103ZXC">
       <node concept="3Vw88J" id="7Ymnhjip$_B" role="1006ar">
         <property role="TrG5h" value="LoadView" />
@@ -987,13 +988,13 @@
             <node concept="3UVeCy" id="A24d4VoRoc" role="30nDbQ">
               <node concept="2ayrQO" id="A24d4VoRod" role="3UVeCz">
                 <node concept="1EpGR1" id="4w1hye2HnVt" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="A24d4VoRoe" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="4w1hye2HnVu" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
               </node>
               <node concept="E2vIp" id="50M3AvrXTIA" role="E88qO" />
@@ -1018,13 +1019,13 @@
             <node concept="3UVeCy" id="7lPnU2OO1th" role="30nDbQ">
               <node concept="2ayrQO" id="7lPnU2OO1ti" role="3UVeCz">
                 <node concept="1EpGR1" id="7lPnU2OO1tj" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="7lPnU2OO1tk" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="7lPnU2OO1tl" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="7lPnU2OO1tV" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
@@ -1117,14 +1118,14 @@
               <node concept="2ayrQO" id="7lPnU2OOAg3" role="3UVeCz">
                 <node concept="1EpGR1" id="7lPnU2OOAg4" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="7lPnU2OOAg5" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="7lPnU2OOAg6" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="7lPnU2OOAg7" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
@@ -1244,15 +1245,15 @@
             <node concept="3UVeCy" id="7lPnU2OOuns" role="30nDbQ">
               <node concept="2ayrQO" id="7lPnU2OOunt" role="3UVeCz">
                 <node concept="1EpGR1" id="7lPnU2OOunu" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="7lPnU2OOunv" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="7lPnU2OOunw" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="7lPnU2OOunx" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
@@ -1435,13 +1436,13 @@
               <node concept="2ayrQO" id="6RKU0seOJAT" role="3UVeCz">
                 <node concept="1EpGR1" id="6RKU0seOJAU" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="6RKU0seOJAV" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="6RKU0seOJAW" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="6RKU0seOJAX" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
@@ -1532,14 +1533,14 @@
               <node concept="2ayrQO" id="2gGjxPLE_Y2" role="3UVeCz">
                 <node concept="1EpGR1" id="2gGjxPLE_Y3" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="2gGjxPLE_Y4" role="1EpG3j">
                   <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="2gGjxPLE_Y5" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="2gGjxPLE_Y6" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
@@ -1655,13 +1656,13 @@
             <node concept="3UVeCy" id="2tcOIVBSAbX" role="30nDbQ">
               <node concept="2ayrQO" id="2tcOIVBSAbY" role="3UVeCz">
                 <node concept="1EpGR1" id="2tcOIVBSAbZ" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTI5" />
+                  <ref role="1EpG3m" node="50M3AvrXTI5" resolve="Priority" />
                 </node>
                 <node concept="1EpGR1" id="2tcOIVBSAc0" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIb" />
+                  <ref role="1EpG3m" node="50M3AvrXTIb" resolve="Task Name" />
                 </node>
                 <node concept="1EpGR1" id="2tcOIVBSAc1" role="1EpG3j">
-                  <ref role="1EpG3m" node="50M3AvrXTIh" />
+                  <ref role="1EpG3m" node="50M3AvrXTIh" resolve="Due Date" />
                 </node>
                 <node concept="3UOqEq" id="2tcOIVBSAc2" role="2ay43_">
                   <property role="3_VSTZ" value="0" />
