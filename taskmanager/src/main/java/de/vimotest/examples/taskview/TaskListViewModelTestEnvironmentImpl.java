@@ -8,7 +8,7 @@ import de.vimotest.examples.taskview.viewmodel.TaskListViewModelImpl;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class TaskListViewModelTestSetupImpl extends TaskListViewModelTestSetup {
+public class TaskListViewModelTestEnvironmentImpl extends TaskListViewModelTestEnvironment {
   private String tasksJson = "";
 
   @Override

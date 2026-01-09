@@ -9,86 +9,86 @@ import org.junit.Assert;
 
 public class TaskListViewModel_LoadTests_Test {
   private TaskListViewModel sut;
-  private TaskListViewModelTestSetup testSetup;
+  private TaskListViewModelTestEnvironment testEnvironment;
   private String oneTask = "[ { id:\"0\", name:\"A\", priority:\"low\", dueDate:\"2024/12/01\" } ]";
   private String twoTasks = "[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" } ]";
   private String priorityCombinations = "[ { id:\"0\", priority:\"low\" },\n  { id:\"1\", priority:\"medium\" },\n  { id:\"2\", priority:\"high\" } ]";
   private String dueDate2023 = "[ { id:\"0\", name:\"Task A\", dueDate:\"2023/01/01\" } ]";
   private String dueDate2024 = "[ { id:\"0\", name:\"Task A\", dueDate:\"2024/10/11\" } ]";
   @Test
-  public void test_Load_Empty_Tasks_given_when_LoadView_then_Tasks_has_0_rows() throws Exception {
+  public void test_Load_Empty_Tasks_given_when_LoadViewModel_then_Tasks_has_0_rows() throws Exception {
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.then_Tasks_has_0_rows();
   }
   @Test
-  public void test_Load_one_Task_with_all_values_given_oneTask_when_LoadView_then_Tasks_has_1_rows() throws Exception {
+  public void test_Load_one_Task_with_all_values_given_oneTask_when_LoadViewModel_then_Tasks_has_1_rows() throws Exception {
     this.given_oneTask();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.then_Tasks_has_1_rows();
   }
   @Test
-  public void test_Initial_selection_given_twoTasks_when_LoadView_then_Tasks_has_2_rows_and_selected_row_handle_0() throws Exception {
+  public void test_Initial_selection_given_twoTasks_when_LoadViewModel_then_Tasks_has_2_rows_and_selected_row_handle_0() throws Exception {
     this.given_twoTasks();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.then_Tasks_has_2_rows_and_selected_row_handle_0();
   }
   @Test
-  public void test_Load_Tasks_with_all_three_priority_levels_given_priorityCombinations_when_LoadView_then_Tasks_has_3_rows() throws Exception {
+  public void test_Load_Tasks_with_all_three_priority_levels_given_priorityCombinations_when_LoadViewModel_then_Tasks_has_3_rows() throws Exception {
     this.given_priorityCombinations();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.then_Tasks_has_3_rows();
   }
   @Test
-  public void test_Due_Date_from_2023_given_dueDate2023_when_LoadView_then_Tasks_has_1_rows() throws Exception {
+  public void test_Due_Date_from_2023_given_dueDate2023_when_LoadViewModel_then_Tasks_has_1_rows() throws Exception {
     this.given_dueDate2023();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.then_Tasks_has_1_rows_1();
   }
   @Test
-  public void test_Due_Date_Tooltip_given_dueDate2024_when_LoadView_then_Tasks_has_1_rows() throws Exception {
+  public void test_Due_Date_Tooltip_given_dueDate2024_when_LoadViewModel_then_Tasks_has_1_rows() throws Exception {
     this.given_dueDate2024();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.then_Tasks_has_1_rows_2();
   }
   @BeforeEach
   public void setUp() {
-    this.testSetup = new TaskListViewModelTestSetupImpl();
-    this.testSetup.Init();
+    this.testEnvironment = new TaskListViewModelTestEnvironmentImpl();
+    this.testEnvironment.Init();
   }
 
 
 
   protected void BuildSut() {
-    this.sut = this.testSetup.BuildSut();
+    this.sut = this.testEnvironment.BuildSut();
   }
 
 
 
   public void given_oneTask() {
-    this.testSetup.SetDataTableJson(this.oneTask);
+    this.testEnvironment.SetDataTableJson(this.oneTask);
   }
   public void given_twoTasks() {
-    this.testSetup.SetDataTableJson(this.twoTasks);
+    this.testEnvironment.SetDataTableJson(this.twoTasks);
   }
   public void given_priorityCombinations() {
-    this.testSetup.SetDataTableJson(this.priorityCombinations);
+    this.testEnvironment.SetDataTableJson(this.priorityCombinations);
   }
   public void given_dueDate2023() {
-    this.testSetup.SetDataTableJson(this.dueDate2023);
+    this.testEnvironment.SetDataTableJson(this.dueDate2023);
   }
   public void given_dueDate2024() {
-    this.testSetup.SetDataTableJson(this.dueDate2024);
+    this.testEnvironment.SetDataTableJson(this.dueDate2024);
   }
 
 
-  public void when_LoadView() {
-    this.sut.loadView();
+  public void when_LoadViewModel() {
+    this.sut.loadViewModel();
   }
 
 

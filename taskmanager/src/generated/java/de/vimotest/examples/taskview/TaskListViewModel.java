@@ -9,8 +9,8 @@ public abstract class TaskListViewModel {
   public abstract String getTasksTableSelectedRow();
   public abstract Boolean getIsAddNewTaskButtonEnabled();
   public abstract Boolean getIsDeleteTaskButtonEnabled();
-  public abstract void loadView();
-  public abstract void tasksRowSelected(String rowHandle);
-  public abstract void addNewTaskClicked();
-  public abstract void deleteTaskClicked();
+  public abstract void loadViewModel();
+  public abstract void tasksTableRowSelected(String rowHandle);
+  public abstract void addNewTaskButtonClicked();
+  public abstract void deleteTaskButtonClicked();
 }

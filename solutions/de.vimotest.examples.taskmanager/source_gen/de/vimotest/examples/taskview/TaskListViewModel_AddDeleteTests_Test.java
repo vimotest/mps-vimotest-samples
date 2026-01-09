@@ -9,60 +9,60 @@ import org.junit.Assert;
 
 public class TaskListViewModel_AddDeleteTests_Test {
   private TaskListViewModel sut;
-  private TaskListViewModelTestSetup testSetup;
+  private TaskListViewModelTestEnvironment testEnvironment;
   private String oneTask = "[ { id:\"0\", name:\"A\", priority:\"low\", dueDate:\"2024/12/01\" } ]";
   private String threeTasks = "[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" },\n  { id:\"2\", name:\"C\" } ]";
   private String emptyTasks = "[ { id:\"0\", name:\"Task A\", dueDate:\"2023/01/01\" } ]";
   @Test
-  public void test_Add_New_Task_given_oneTask_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1() throws Exception {
+  public void test_Add_New_Task_given_oneTask_when_LoadViewModel_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1() throws Exception {
     this.given_oneTask();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_click_AddNewTask();
     this.then_Tasks_has_2_rows_and_selected_row_handle_1();
   }
   @Test
-  public void test_Delete_Task_given_threeTasks_when_LoadView_and_select_row_0_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1() throws Exception {
+  public void test_Delete_Task_given_threeTasks_when_LoadViewModel_and_select_row_0_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1() throws Exception {
     this.given_threeTasks();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_select_row_0_in_Tasks();
     this.when_click_DeleteTask();
     this.then_Tasks_has_2_rows_and_selected_row_handle_1_1();
   }
   @Test
-  public void test_Delete_Task_given_threeTasks_when_LoadView_and_select_row_1_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_2() throws Exception {
+  public void test_Delete_Task_given_threeTasks_when_LoadViewModel_and_select_row_1_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_2() throws Exception {
     this.given_threeTasks();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_select_row_1_in_Tasks();
     this.when_click_DeleteTask();
     this.then_Tasks_has_2_rows_and_selected_row_handle_2();
   }
   @Test
-  public void test_Delete_Task_given_threeTasks_when_LoadView_and_select_row_2_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1() throws Exception {
+  public void test_Delete_Task_given_threeTasks_when_LoadViewModel_and_select_row_2_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1() throws Exception {
     this.given_threeTasks();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_select_row_2_in_Tasks();
     this.when_click_DeleteTask();
     this.then_Tasks_has_2_rows_and_selected_row_handle_1_2();
   }
   @Test
-  public void test_Delete_Task_given_threeTasks_when_LoadView_and_click_DeleteTask_and_click_DeleteTask_and_click_DeleteTask_then_Tasks_has_0_rows() throws Exception {
+  public void test_Delete_Task_given_threeTasks_when_LoadViewModel_and_click_DeleteTask_and_click_DeleteTask_and_click_DeleteTask_then_Tasks_has_0_rows() throws Exception {
     this.given_threeTasks();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_click_DeleteTask();
     this.when_click_DeleteTask();
     this.when_click_DeleteTask();
     this.then_Tasks_has_0_rows();
   }
   @Test
-  public void test_Delete_disabled_if_nothing_selected_given_emptyTasks_when_LoadView_and_select_row_0_in_Tasks_and_click_DeleteTask_then_AddNewTask_is_enabled_and_DeleteTask_is_not_enabled() throws Exception {
+  public void test_Delete_disabled_if_nothing_selected_given_emptyTasks_when_LoadViewModel_and_select_row_0_in_Tasks_and_click_DeleteTask_then_AddNewTask_is_enabled_and_DeleteTask_is_not_enabled() throws Exception {
     this.given_emptyTasks();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_select_row_0_in_Tasks();
     this.when_click_DeleteTask();
     this.then_AddNewTask_is_enabled();
@@ -70,46 +70,46 @@ public class TaskListViewModel_AddDeleteTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.testSetup = new TaskListViewModelTestSetupImpl();
-    this.testSetup.Init();
+    this.testEnvironment = new TaskListViewModelTestEnvironmentImpl();
+    this.testEnvironment.Init();
   }
 
 
 
   protected void BuildSut() {
-    this.sut = this.testSetup.BuildSut();
+    this.sut = this.testEnvironment.BuildSut();
   }
 
 
 
   public void given_oneTask() {
-    this.testSetup.SetDataTableJson(this.oneTask);
+    this.testEnvironment.SetDataTableJson(this.oneTask);
   }
   public void given_threeTasks() {
-    this.testSetup.SetDataTableJson(this.threeTasks);
+    this.testEnvironment.SetDataTableJson(this.threeTasks);
   }
   public void given_emptyTasks() {
-    this.testSetup.SetDataTableJson(this.emptyTasks);
+    this.testEnvironment.SetDataTableJson(this.emptyTasks);
   }
 
 
-  public void when_LoadView() {
-    this.sut.loadView();
+  public void when_LoadViewModel() {
+    this.sut.loadViewModel();
   }
   public void when_click_AddNewTask() {
-    this.sut.addNewTaskClicked();
+    this.sut.addNewTaskButtonClicked();
   }
   public void when_select_row_0_in_Tasks() {
-    this.sut.tasksRowSelected("0");
+    this.sut.tasksTableRowSelected("0");
   }
   public void when_click_DeleteTask() {
-    this.sut.deleteTaskClicked();
+    this.sut.deleteTaskButtonClicked();
   }
   public void when_select_row_1_in_Tasks() {
-    this.sut.tasksRowSelected("1");
+    this.sut.tasksTableRowSelected("1");
   }
   public void when_select_row_2_in_Tasks() {
-    this.sut.tasksRowSelected("2");
+    this.sut.tasksTableRowSelected("2");
   }
 
 

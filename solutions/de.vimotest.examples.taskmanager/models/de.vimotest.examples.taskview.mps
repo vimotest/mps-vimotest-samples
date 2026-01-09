@@ -21,7 +21,7 @@
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing">
       <concept id="9155943921465570537" name="de.vimotest.viewmodel.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql" />
-      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
+      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ParameterizedCommandCallAction" flags="ng" index="27s6xY">
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
       </concept>
       <concept id="5447508759369797102" name="de.vimotest.viewmodel.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
@@ -152,15 +152,15 @@
         <child id="6201744883139140302" name="textFeature" index="2X2XNi" />
         <child id="6201744883139140303" name="enabledFeature" index="2X2XNj" />
       </concept>
-      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
-        <child id="777152910169039599" name="commands" index="1006ar" />
+      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommandSection" flags="ng" index="103ZXx">
+        <child id="777152910169039599" name="contents" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <property id="4513875792335097421" name="baseName" index="$YGLj" />
-        <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
-        <child id="777152910168882975" name="viewModelData" index="103ZXF" />
+        <child id="777152910168882972" name="commandSection" index="103ZXC" />
+        <child id="777152910168882975" name="stateSection" index="103ZXF" />
       </concept>
-      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelStateSection" flags="ng" index="103ZXB" />
       <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui">
         <property id="5775867078593476692" name="defaultColorCode" index="31hZzl" />
       </concept>
@@ -251,7 +251,7 @@
       <node concept="1s$VFG" id="7lPnU2OOXHb" role="1s$QAY">
         <node concept="DUd5q" id="7lPnU2OOXHc" role="1s$QAM">
           <node concept="27s6xY" id="7lPnU2OOXHd" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="7lPnU2OOXI1" role="1s$QAM">
@@ -390,7 +390,7 @@
       <node concept="1s$VFG" id="19EEtwRDL97" role="1s$QAY">
         <node concept="DUd5q" id="19EEtwRDL98" role="1s$QAM">
           <node concept="27s6xY" id="19EEtwRDL99" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwRDL9a" role="1s$QAM">
@@ -492,7 +492,7 @@
       <node concept="1s$VFG" id="19EEtwRDLbL" role="1s$QAY">
         <node concept="DUd5q" id="19EEtwRDLbQ" role="1s$QAM">
           <node concept="27s6xY" id="19EEtwRDLbR" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwRDLbS" role="1s$QAM">
@@ -594,7 +594,7 @@
       <node concept="1s$VFG" id="19EEtwRDLcx" role="1s$QAY">
         <node concept="DUd5q" id="19EEtwRDLcy" role="1s$QAM">
           <node concept="27s6xY" id="19EEtwRDLcz" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwRDLc$" role="1s$QAM">
@@ -696,7 +696,7 @@
       <node concept="1s$VFG" id="19EEtwREcco" role="1s$QAY">
         <node concept="DUd5q" id="19EEtwREccp" role="1s$QAM">
           <node concept="27s6xY" id="19EEtwREccq" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="19EEtwREcct" role="1s$QAM">
@@ -810,7 +810,7 @@
       <node concept="1s$VFG" id="2gGjxPLE5Dq" role="1s$QAY">
         <node concept="DUd5q" id="2gGjxPLE5Dr" role="1s$QAM">
           <node concept="27s6xY" id="2gGjxPLE5Ds" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="2gGjxPLE5DN" role="1s$QAM">
@@ -849,7 +849,7 @@
     <property role="$YGLj" value="TaskListViewModel" />
     <node concept="103ZXx" id="7Ymnhjip$_A" role="103ZXC">
       <node concept="3Vw88J" id="7Ymnhjip$_B" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
     </node>
     <node concept="103ZXB" id="7Ymnhjip$_C" role="103ZXF">
@@ -979,7 +979,7 @@
       <node concept="1s$VFG" id="A24d4VoRo4" role="1s$QAY">
         <node concept="DUd5q" id="A24d4VoRo5" role="1s$QAM">
           <node concept="27s6xY" id="A24d4VoRo9" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd2R" id="A24d4VoRo7" role="1s$QAX">
@@ -1010,7 +1010,7 @@
       <node concept="1s$VFG" id="7lPnU2OO1tc" role="1s$QAY">
         <node concept="DUd5q" id="7lPnU2OO1td" role="1s$QAM">
           <node concept="27s6xY" id="7lPnU2OO1te" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd2R" id="7lPnU2OO1tf" role="1s$QAX">
@@ -1108,7 +1108,7 @@
       <node concept="1s$VFG" id="7lPnU2OOAfX" role="1s$QAY">
         <node concept="DUd5q" id="7lPnU2OOAfY" role="1s$QAM">
           <node concept="27s6xY" id="7lPnU2OOAfZ" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd2R" id="7lPnU2OOAg0" role="1s$QAX">
@@ -1236,7 +1236,7 @@
       <node concept="1s$VFG" id="7lPnU2OOunn" role="1s$QAY">
         <node concept="DUd5q" id="7lPnU2OOuno" role="1s$QAM">
           <node concept="27s6xY" id="7lPnU2OOunp" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd2R" id="7lPnU2OOunq" role="1s$QAX">
@@ -1426,7 +1426,7 @@
       <node concept="1s$VFG" id="6RKU0seOJAy" role="1s$QAY">
         <node concept="DUd5q" id="6RKU0seOJAz" role="1s$QAM">
           <node concept="27s6xY" id="6RKU0seOJAP" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd2R" id="6RKU0seOJA_" role="1s$QAX">
@@ -1523,7 +1523,7 @@
       <node concept="1s$VFG" id="2gGjxPLE_XA" role="1s$QAY">
         <node concept="DUd5q" id="2gGjxPLE_XB" role="1s$QAM">
           <node concept="27s6xY" id="2gGjxPLE_XC" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd2R" id="2gGjxPLE_XD" role="1s$QAX">
@@ -1642,7 +1642,7 @@
       <node concept="1s$VFG" id="2tcOIVBSAbQ" role="1s$QAY">
         <node concept="DUd5q" id="2tcOIVBSAbR" role="1s$QAM">
           <node concept="27s6xY" id="2tcOIVBSAbS" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="2tcOIVBSAbT" role="1s$QAM">

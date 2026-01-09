@@ -84,17 +84,17 @@ public class TaskListViewModelImpl extends TaskListViewModel {
     }
 
     @Override
-    public void loadView() {
+    public void loadViewModel() {
         selectionUpdated();
     }
 
     @Override
-    public void tasksRowSelected(String rowHandle) {
+    public void tasksTableRowSelected(String rowHandle) {
         this.selectedRow.set(rowHandle);
     }
 
     @Override
-    public void addNewTaskClicked() {
+    public void addNewTaskButtonClicked() {
         Task task = taskManager.addTask("<New Task>", "", "medium");
         this.tasks.add(new TaskListViewModelTasksRowImpl(task));
         this.selectedRow.set(this.tasks.size() - 1 + "");
@@ -102,7 +102,7 @@ public class TaskListViewModelImpl extends TaskListViewModel {
     }
 
     @Override
-    public void deleteTaskClicked() {
+    public void deleteTaskButtonClicked() {
         final TaskListViewModelTasksRowImpl selectedTask = tasks.stream()
                 .filter(task -> task.getRowHandle().equals(selectedRow.get()))
                 .findFirst()

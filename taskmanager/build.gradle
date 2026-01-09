@@ -37,7 +37,7 @@ task copyGeneratedSources {
         from generatedDir
         into 'src/generated/java'
         include '**/*.java'
-        exclude '**/*Test.java', '**/TaskListViewModelTestSetupImpl.java'
+        exclude '**/*Test.java', '**/TaskListViewModelTestEnvironmentImpl.java'
     }
     copy {
         from generatedDir

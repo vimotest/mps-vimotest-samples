@@ -9,13 +9,13 @@ import org.junit.Assert;
 
 public class TaskListViewModel_ComplexTests_Test {
   private TaskListViewModel sut;
-  private TaskListViewModelTestSetup testSetup;
+  private TaskListViewModelTestEnvironment testEnvironment;
   private String sampleTasks = "[ { id:\"0\", name:\"Exercise\", priority:\"low\", dueDate:\"2024/01/04\" },\n  { id:\"1\", name:\"Taxes\", priority:\"high\", dueDate:\"2023/12/31\" } ]";
   @Test
-  public void test_Load_Tasks_and_Add_New_given_sampleTasks_when_LoadView_and_click_AddNewTask_then_Tasks_has_3_rows_and_selected_row_handle_2_and_AddNewTask_is_enabled_and_DeleteTask_is_enabled() throws Exception {
+  public void test_Load_Tasks_and_Add_New_given_sampleTasks_when_LoadViewModel_and_click_AddNewTask_then_Tasks_has_3_rows_and_selected_row_handle_2_and_AddNewTask_is_enabled_and_DeleteTask_is_enabled() throws Exception {
     this.given_sampleTasks();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_click_AddNewTask();
     this.then_Tasks_has_3_rows_and_selected_row_handle_2();
     this.then_AddNewTask_is_enabled();
@@ -23,28 +23,28 @@ public class TaskListViewModel_ComplexTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.testSetup = new TaskListViewModelTestSetupImpl();
-    this.testSetup.Init();
+    this.testEnvironment = new TaskListViewModelTestEnvironmentImpl();
+    this.testEnvironment.Init();
   }
 
 
 
   protected void BuildSut() {
-    this.sut = this.testSetup.BuildSut();
+    this.sut = this.testEnvironment.BuildSut();
   }
 
 
 
   public void given_sampleTasks() {
-    this.testSetup.SetDataTableJson(this.sampleTasks);
+    this.testEnvironment.SetDataTableJson(this.sampleTasks);
   }
 
 
-  public void when_LoadView() {
-    this.sut.loadView();
+  public void when_LoadViewModel() {
+    this.sut.loadViewModel();
   }
   public void when_click_AddNewTask() {
-    this.sut.addNewTaskClicked();
+    this.sut.addNewTaskButtonClicked();
   }
 
 
