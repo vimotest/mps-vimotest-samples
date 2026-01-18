@@ -115,69 +115,69 @@ public class TaskListViewModel_AddDeleteTests_Test {
 
   public void then_Tasks_has_2_rows_and_selected_row_handle_1() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("A", row0.getTaskNameLabelText());
+    Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
+    Assert.assertEquals("Expected that label Task Name has text <" + "A" + ">, but was <" + row0.getTaskNameLabelText() + ">", "A", row0.getTaskNameLabelText());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("1", row1.getRowHandle());
-    Assert.assertEquals("PrioMedium", row1.getPriorityImageName());
-    Assert.assertEquals("<New Task>", row1.getTaskNameLabelText());
-    Assert.assertEquals("", row1.getDueDateLabelText());
+    Assert.assertEquals("Expected that table view Tasks row at index 1 has rowhandle <1>, but was <" + row1.getRowHandle() + ">", "1", row1.getRowHandle());
+    Assert.assertEquals("Expected that image Priority has " + "image <PrioMedium>" + ", but was <" + row1.getPriorityImageName() + ">", "PrioMedium", row1.getPriorityImageName());
+    Assert.assertEquals("Expected that label Task Name has text <" + "<New Task>" + ">, but was <" + row1.getTaskNameLabelText() + ">", "<New Task>", row1.getTaskNameLabelText());
+    Assert.assertEquals("Expected that label Due Date has text <" + "" + ">, but was <" + row1.getDueDateLabelText() + ">", "", row1.getDueDateLabelText());
     // }
-    Assert.assertEquals("1", this.sut.getTasksTableSelectedRow());
+    Assert.assertEquals("Expected that table view Tasks has selected row with row handle <" + "1" + ">, but was <" + this.sut.getTasksTableSelectedRow() + ">", "1", this.sut.getTasksTableSelectedRow());
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_1_1() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("1", row0.getRowHandle());
-    Assert.assertEquals("B", row0.getTaskNameLabelText());
+    Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <1>, but was <" + row0.getRowHandle() + ">", "1", row0.getRowHandle());
+    Assert.assertEquals("Expected that label Task Name has text <" + "B" + ">, but was <" + row0.getTaskNameLabelText() + ">", "B", row0.getTaskNameLabelText());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("2", row1.getRowHandle());
-    Assert.assertEquals("C", row1.getTaskNameLabelText());
+    Assert.assertEquals("Expected that table view Tasks row at index 1 has rowhandle <2>, but was <" + row1.getRowHandle() + ">", "2", row1.getRowHandle());
+    Assert.assertEquals("Expected that label Task Name has text <" + "C" + ">, but was <" + row1.getTaskNameLabelText() + ">", "C", row1.getTaskNameLabelText());
     // }
-    Assert.assertEquals("1", this.sut.getTasksTableSelectedRow());
+    Assert.assertEquals("Expected that table view Tasks has selected row with row handle <" + "1" + ">, but was <" + this.sut.getTasksTableSelectedRow() + ">", "1", this.sut.getTasksTableSelectedRow());
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_2() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("A", row0.getTaskNameLabelText());
+    Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
+    Assert.assertEquals("Expected that label Task Name has text <" + "A" + ">, but was <" + row0.getTaskNameLabelText() + ">", "A", row0.getTaskNameLabelText());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("2", row1.getRowHandle());
-    Assert.assertEquals("C", row1.getTaskNameLabelText());
+    Assert.assertEquals("Expected that table view Tasks row at index 1 has rowhandle <2>, but was <" + row1.getRowHandle() + ">", "2", row1.getRowHandle());
+    Assert.assertEquals("Expected that label Task Name has text <" + "C" + ">, but was <" + row1.getTaskNameLabelText() + ">", "C", row1.getTaskNameLabelText());
     // }
-    Assert.assertEquals("2", this.sut.getTasksTableSelectedRow());
+    Assert.assertEquals("Expected that table view Tasks has selected row with row handle <" + "2" + ">, but was <" + this.sut.getTasksTableSelectedRow() + ">", "2", this.sut.getTasksTableSelectedRow());
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_1_2() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("A", row0.getTaskNameLabelText());
+    Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
+    Assert.assertEquals("Expected that label Task Name has text <" + "A" + ">, but was <" + row0.getTaskNameLabelText() + ">", "A", row0.getTaskNameLabelText());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("1", row1.getRowHandle());
-    Assert.assertEquals("B", row1.getTaskNameLabelText());
+    Assert.assertEquals("Expected that table view Tasks row at index 1 has rowhandle <1>, but was <" + row1.getRowHandle() + ">", "1", row1.getRowHandle());
+    Assert.assertEquals("Expected that label Task Name has text <" + "B" + ">, but was <" + row1.getTaskNameLabelText() + ">", "B", row1.getTaskNameLabelText());
     // }
-    Assert.assertEquals("1", this.sut.getTasksTableSelectedRow());
+    Assert.assertEquals("Expected that table view Tasks has selected row with row handle <" + "1" + ">, but was <" + this.sut.getTasksTableSelectedRow() + ">", "1", this.sut.getTasksTableSelectedRow());
   }
   public void then_Tasks_has_0_rows() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 0 rows, but has " + actualRows.size(), Integer.valueOf(0), Integer.valueOf(actualRows.size()));
   }
   public void then_AddNewTask_is_enabled() {
     Assert.assertTrue(this.sut.getIsAddNewTaskButtonEnabled());

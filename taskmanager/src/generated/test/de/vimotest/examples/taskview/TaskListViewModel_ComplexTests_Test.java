@@ -50,33 +50,33 @@ public class TaskListViewModel_ComplexTests_Test {
 
   public void then_Tasks_has_3_rows_and_selected_row_handle_2() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 3 rows, but has " + actualRows.size(), Integer.valueOf(3), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("0", row0.getRowHandle());
-    Assert.assertEquals("PrioLow", row0.getPriorityImageName());
-    Assert.assertEquals("Exercise", row0.getTaskNameLabelText());
-    Assert.assertEquals("2024/01/04", row0.getDueDateLabelText());
-    Assert.assertEquals("4th January 2024", row0.getDueDateLabelToolTip());
+    Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
+    Assert.assertEquals("Expected that image Priority has " + "image <PrioLow>" + ", but was <" + row0.getPriorityImageName() + ">", "PrioLow", row0.getPriorityImageName());
+    Assert.assertEquals("Expected that label Task Name has text <" + "Exercise" + ">, but was <" + row0.getTaskNameLabelText() + ">", "Exercise", row0.getTaskNameLabelText());
+    Assert.assertEquals("Expected that label Due Date has text <" + "2024/01/04" + ">, but was <" + row0.getDueDateLabelText() + ">", "2024/01/04", row0.getDueDateLabelText());
+    Assert.assertEquals("Expected that label Due Date has tooltip <" + "4th January 2024" + ">, but was <" + row0.getDueDateLabelToolTip() + ">", "4th January 2024", row0.getDueDateLabelToolTip());
     // }
     // {
     TaskListViewModelTasksRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("1", row1.getRowHandle());
-    Assert.assertEquals("PrioHigh", row1.getPriorityImageName());
-    Assert.assertEquals("Taxes", row1.getTaskNameLabelText());
-    Assert.assertEquals("red", row1.getTaskNameLabelTextColor());
-    Assert.assertEquals("2023/12/31", row1.getDueDateLabelText());
-    Assert.assertEquals("red", row1.getDueDateLabelTextColor());
-    Assert.assertEquals("31st December 2023", row1.getDueDateLabelToolTip());
+    Assert.assertEquals("Expected that table view Tasks row at index 1 has rowhandle <1>, but was <" + row1.getRowHandle() + ">", "1", row1.getRowHandle());
+    Assert.assertEquals("Expected that image Priority has " + "image <PrioHigh>" + ", but was <" + row1.getPriorityImageName() + ">", "PrioHigh", row1.getPriorityImageName());
+    Assert.assertEquals("Expected that label Task Name has text <" + "Taxes" + ">, but was <" + row1.getTaskNameLabelText() + ">", "Taxes", row1.getTaskNameLabelText());
+    Assert.assertEquals("Expected that label Task Name has text color <" + "red" + ">, but was <" + row1.getTaskNameLabelTextColor() + ">", "red", row1.getTaskNameLabelTextColor());
+    Assert.assertEquals("Expected that label Due Date has text <" + "2023/12/31" + ">, but was <" + row1.getDueDateLabelText() + ">", "2023/12/31", row1.getDueDateLabelText());
+    Assert.assertEquals("Expected that label Due Date has text color <" + "red" + ">, but was <" + row1.getDueDateLabelTextColor() + ">", "red", row1.getDueDateLabelTextColor());
+    Assert.assertEquals("Expected that label Due Date has tooltip <" + "31st December 2023" + ">, but was <" + row1.getDueDateLabelToolTip() + ">", "31st December 2023", row1.getDueDateLabelToolTip());
     // }
     // {
     TaskListViewModelTasksRow row2 = actualRows.get(3 - 1);
-    Assert.assertEquals("2", row2.getRowHandle());
-    Assert.assertEquals("PrioMedium", row2.getPriorityImageName());
-    Assert.assertEquals("<New Task>", row2.getTaskNameLabelText());
-    Assert.assertEquals("", row2.getDueDateLabelText());
+    Assert.assertEquals("Expected that table view Tasks row at index 2 has rowhandle <2>, but was <" + row2.getRowHandle() + ">", "2", row2.getRowHandle());
+    Assert.assertEquals("Expected that image Priority has " + "image <PrioMedium>" + ", but was <" + row2.getPriorityImageName() + ">", "PrioMedium", row2.getPriorityImageName());
+    Assert.assertEquals("Expected that label Task Name has text <" + "<New Task>" + ">, but was <" + row2.getTaskNameLabelText() + ">", "<New Task>", row2.getTaskNameLabelText());
+    Assert.assertEquals("Expected that label Due Date has text <" + "" + ">, but was <" + row2.getDueDateLabelText() + ">", "", row2.getDueDateLabelText());
     // }
-    Assert.assertEquals("2", this.sut.getTasksTableSelectedRow());
+    Assert.assertEquals("Expected that table view Tasks has selected row with row handle <" + "2" + ">, but was <" + this.sut.getTasksTableSelectedRow() + ">", "2", this.sut.getTasksTableSelectedRow());
   }
   public void then_AddNewTask_is_enabled() {
     Assert.assertTrue(this.sut.getIsAddNewTaskButtonEnabled());
