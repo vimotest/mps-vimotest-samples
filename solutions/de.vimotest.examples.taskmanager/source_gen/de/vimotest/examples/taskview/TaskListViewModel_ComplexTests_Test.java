@@ -50,7 +50,7 @@ public class TaskListViewModel_ComplexTests_Test {
 
   public void then_Tasks_has_3_rows_and_selected_row_handle_2() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals("Expected that table view Tasks has 3 rows, but has " + actualRows.size(), Integer.valueOf(3), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 3 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(3), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());

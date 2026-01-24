@@ -115,7 +115,7 @@ public class TaskListViewModel_AddDeleteTests_Test {
 
   public void then_Tasks_has_2_rows_and_selected_row_handle_1() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
@@ -132,7 +132,7 @@ public class TaskListViewModel_AddDeleteTests_Test {
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_1_1() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <1>, but was <" + row0.getRowHandle() + ">", "1", row0.getRowHandle());
@@ -147,7 +147,7 @@ public class TaskListViewModel_AddDeleteTests_Test {
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_2() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
@@ -162,7 +162,7 @@ public class TaskListViewModel_AddDeleteTests_Test {
   }
   public void then_Tasks_has_2_rows_and_selected_row_handle_1_2() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TaskListViewModelTasksRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view Tasks row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
@@ -177,7 +177,7 @@ public class TaskListViewModel_AddDeleteTests_Test {
   }
   public void then_Tasks_has_0_rows() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
-    Assert.assertEquals("Expected that table view Tasks has 0 rows, but has " + actualRows.size(), Integer.valueOf(0), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view Tasks has 0 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(0), Integer.valueOf(actualRows.size()));
   }
   public void then_AddNewTask_is_enabled() {
     Assert.assertTrue("Expected button AddNewTask is enabled, but it was disabled", this.sut.getIsAddNewTaskButtonEnabled());
