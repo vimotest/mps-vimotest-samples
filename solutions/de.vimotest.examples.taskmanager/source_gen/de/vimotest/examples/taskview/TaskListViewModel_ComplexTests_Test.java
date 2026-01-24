@@ -79,9 +79,9 @@ public class TaskListViewModel_ComplexTests_Test {
     Assert.assertEquals("Expected that table view Tasks has selected row with row handle <" + "2" + ">, but was <" + this.sut.getTasksTableSelectedRow() + ">", "2", this.sut.getTasksTableSelectedRow());
   }
   public void then_AddNewTask_is_enabled() {
-    Assert.assertTrue(this.sut.getIsAddNewTaskButtonEnabled());
+    Assert.assertTrue("Expected button AddNewTask is enabled, but it was disabled", this.sut.getIsAddNewTaskButtonEnabled());
   }
   public void then_DeleteTask_is_enabled() {
-    Assert.assertTrue(this.sut.getIsDeleteTaskButtonEnabled());
+    Assert.assertTrue("Expected button DeleteTask is enabled, but it was disabled", this.sut.getIsDeleteTaskButtonEnabled());
   }
 }

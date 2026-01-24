@@ -180,9 +180,9 @@ public class TaskListViewModel_AddDeleteTests_Test {
     Assert.assertEquals("Expected that table view Tasks has 0 rows, but has " + actualRows.size(), Integer.valueOf(0), Integer.valueOf(actualRows.size()));
   }
   public void then_AddNewTask_is_enabled() {
-    Assert.assertTrue(this.sut.getIsAddNewTaskButtonEnabled());
+    Assert.assertTrue("Expected button AddNewTask is enabled, but it was disabled", this.sut.getIsAddNewTaskButtonEnabled());
   }
   public void then_DeleteTask_is_not_enabled() {
-    Assert.assertFalse(this.sut.getIsDeleteTaskButtonEnabled());
+    Assert.assertFalse("Expected button DeleteTask is disabled, but it was enabled", this.sut.getIsDeleteTaskButtonEnabled());
   }
 }
