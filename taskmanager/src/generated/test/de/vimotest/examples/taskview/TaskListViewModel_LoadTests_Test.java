@@ -69,7 +69,6 @@ public class TaskListViewModel_LoadTests_Test {
   }
 
 
-
   public void given_oneTask() {
     this.testEnvironment.SetDataTableJson(this.oneTask);
   }
@@ -86,11 +85,9 @@ public class TaskListViewModel_LoadTests_Test {
     this.testEnvironment.SetDataTableJson(this.dueDate2024);
   }
 
-
   public void when_LoadViewModel() {
     this.sut.loadViewModel();
   }
-
 
   public void then_Tasks_has_0_rows() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();

@@ -1,6 +1,17 @@
-ext.mpsVersion = "2025.3"
+ext.mpsVersion = "2026.1"
 ext.mpsPlugins = [ ]
-ext.customMpsPlugins = [ "vimotest-plugins-all": "https://github.com/vimotest/mps-vimotest/releases/download/2025.3.2-beta1/vimotest-plugins-all.zip" ]
+
+def vimotestPluginUrl = project.findProperty("vimotestPluginUrl") ?: "https://github.com/vimotest/mps-vimotest/releases/download/2026.1.0/mps-vimotest.zip"
+def alfiPluginUrl = project.findProperty("alfiPluginUrl") ?: "https://github.com/vimotest/mps-alfi/releases/download/2026.1.0/alfi.zip"
+def cppBaseLanguagePluginUrl = project.findProperty("cppBaseLanguagePluginUrl") ?: "https://github.com/Fumapps/CppBaseLanguage/releases/download/2026.1.0/CppBaseLanguage.zip"
+def csBaseLanguagePluginUrl = project.findProperty("csBaseLanguagePluginUrl") ?: "https://github.com/Fumapps/CsBaseLanguage/releases/download/2026.1.0/CsBaseLanguage.zip"
+
+ext.customMpsPlugins = [
+    "mps-vimotest": vimotestPluginUrl,
+    "alfi": alfiPluginUrl,
+    "CppBaseLanguage": cppBaseLanguagePluginUrl,
+    "CsBaseLanguage": csBaseLanguagePluginUrl
+]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
 
@@ -22,4 +33,15 @@ task openProjectInMps(type: Exec) {
 task mpsClean {
     group 'mps'
     dependsOn 'mpsAntClean', 'mpsAntCleanSources'
+}
+
+task mpsTest {
+    group 'mps'
+    dependsOn 'mpsAntCheck'
+    doLast {
+        exec {
+            workingDir "${projectDir}/taskmanager"
+            commandLine './gradlew', 'test'
+        }
+    }
 }

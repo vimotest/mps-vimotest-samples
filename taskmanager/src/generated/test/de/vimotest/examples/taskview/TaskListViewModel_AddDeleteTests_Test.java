@@ -81,7 +81,6 @@ public class TaskListViewModel_AddDeleteTests_Test {
   }
 
 
-
   public void given_oneTask() {
     this.testEnvironment.SetDataTableJson(this.oneTask);
   }
@@ -91,7 +90,6 @@ public class TaskListViewModel_AddDeleteTests_Test {
   public void given_emptyTasks() {
     this.testEnvironment.SetDataTableJson(this.emptyTasks);
   }
-
 
   public void when_LoadViewModel() {
     this.sut.loadViewModel();
@@ -111,7 +109,6 @@ public class TaskListViewModel_AddDeleteTests_Test {
   public void when_select_row_2_in_Tasks() {
     this.sut.tasksTableRowSelected("2");
   }
-
 
   public void then_Tasks_has_2_rows_and_selected_row_handle_1() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();

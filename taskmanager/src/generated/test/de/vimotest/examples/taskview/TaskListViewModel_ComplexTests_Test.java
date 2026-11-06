@@ -34,11 +34,9 @@ public class TaskListViewModel_ComplexTests_Test {
   }
 
 
-
   public void given_sampleTasks() {
     this.testEnvironment.SetDataTableJson(this.sampleTasks);
   }
-
 
   public void when_LoadViewModel() {
     this.sut.loadViewModel();
@@ -46,7 +44,6 @@ public class TaskListViewModel_ComplexTests_Test {
   public void when_click_AddNewTask() {
     this.sut.addNewTaskButtonClicked();
   }
-
 
   public void then_Tasks_has_3_rows_and_selected_row_handle_2() {
     List<TaskListViewModelTasksRow> actualRows = this.sut.getTasksTableRows();
